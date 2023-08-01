@@ -1,7 +1,7 @@
 ---
 layout: about
 ---
-[(Switch to English version)](https://fynnzhou.github.io/MySiteEN/)
+[ $\it{\color{SteelBlue}{(Switch \enspace to \enspace English \enspace version)}}$](https://fynnzhou.github.io/MySiteEN/)
 
 # 教育经历
 
