@@ -7,7 +7,7 @@ google_analytics: # Tracking ID, e.g. "UA-000000-01"
 # Author
 author:
   name: 周一飞
-  desc: 你好！欢迎来到我的主页，我叫周一飞，励志成为一名优秀的量化研究员
+  desc: 你好！我叫周一飞,欢迎来到我的主页！我对数据分析和量化策略研究有浓厚的兴趣！
   email: fynnzhou@outlook.com
   selfie: assets/img/profile.jpg
 

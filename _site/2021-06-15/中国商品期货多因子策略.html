@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>周一飞</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/MySiteCN/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/MySiteCN/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/MySiteCN/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+        }
+    });
+  </script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/MySiteCN/">
+          <h2 class="nav-title">周一飞</h2>
+        </a>
+        <ul>
+          <li><a href="/MySiteCN/">About</a></li>
+          <li><a href="/MySiteCN/portfolio/">Portfolio</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <h2 class="post-title">中国商品期货因子的有效性分析与组合策略研究</h2>
+  <div class="post-line"></div>
+
+  <h2 id="摘要">摘要</h2>
+
+<p>策略参照多因子模型的选股方法，在现有文献研究基础上，结合海内外市场常用的因子分类方法， 从动量效应、期限结构、会员持仓、基本面仓单数据、期货量价数据和通胀对冲角度构建商品期货因子，并从交易所获取 2010年1月1日到2021年2月1日国内商品期货数据，借助 Barra 多因子分析框架，检验这些因子在国内商品期货市场的有效性以及在不同板块的适用性。策略在之后仿照多因子打分法选股对投资标的进行筛选，并尝试给出一种新的方法对因子进行组合。策略最后结合期货合约杠杆交易、高波动的特点，测试利用不同目标波动率策略进行资产配置的表现。基于以上研究，报告在最后给出了利用多因子模型构建期货横截面投资策略的相关建议。</p>
+
+<p>##</p>
+
+<p>点击查看<a href="../assets/pdfs/commodity_factors.pdf">$\color{SteelBlue}{详细报告(CN)}$</a></p>
+
+<h2 id="研究的不足及改进方向">研究的不足及改进方向</h2>
+<ul>
+  <li>部分因子存在高频化研究空间
+&amp;ensp不同于股票等其它资产，期货市场允许日内平仓，因此在实际市场交易中，不同品种日内波动存在较大差异，本文仅使用每日收盘价为价格标的，以日度频率进行调仓交易，需要承担一定的日内波动风险 。除此之外，对于诸如横截面动量类因子，尽管在日频表现不佳，但从原理上来说仍然存在高频化的研究空间。而对于 CPI、 PPI 等宏观数据， 属于月度公布的低频数据，与相对高频的其它日频因子难以在同一口径下构建因子组合。因此，对于此类低频数据，仍然存在高频化研究的价值。</li>
+  <li>参数依赖于历史数据，未来面临着重新调整参数或参数失效的问题
+&amp;ensp在构建策略时选择因子参数依据其在过去历史的表现情况，在未来面临参数重新调整的问题，以横截面动量因子为例， 横截面动量因子在 2015 年以前表现良好，但在此之后却出现失效的现象。 与此同时，不同回看期的因子表现也差异较大。 除此之外，在总体目标波动率策略构建过程中，对平均相关系数的估计亦基于历史数据线性外推。因此， 在后续的研究当中，还需要对策略进行动态调参处理。</li>
+  <li>期货品种的“个性”
+&amp;ensp与股票等其它资产不同，商品期货合约因品种不同而存在交易单位、最小变动价位、涨跌停板幅度、手续费和最低交易保证金等的差异，同时由于国家管制方式以及市场需求的不同，不同期货合约存在流动性差异。本文在进行历史回测时，对手续费和最低交易保证金进行了平均化地模糊处理。在后续的研究当中，还应当根据不同合约品种的手续费和保证金差异进行精细化处理。</li>
+  <li>目标波动率预测
+&amp;ensp在构建目标波动率策略的过程中，对未来波动率的估计采用历史波动率外推的方法，且波动率回看窗口固定设置为 60 个交易日。因此，在后续的研究当中，还可以调整回看窗口以及引入 Garch、 EGarch 等波动率模型对未来波动率进行动态预测。</li>
+</ul>
+
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/MySiteCN/2022-12-15/%E8%BF%9C%E6%9C%9F%E6%9C%9F%E6%9D%83%E5%AE%9A%E4%BB%B7" class="left next">Prev</a>
+  
+  
+    <a href="/MySiteCN/2020-08-31/%E5%9F%BA%E4%BA%8E%E9%81%97%E4%BC%A0%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E7%9A%84%E9%80%89%E8%82%A1%E5%9B%A0%E5%AD%90%E6%8C%96%E6%8E%98" class="right next">Next</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+    </bv>
+      <span>
+        &copy; <time datetime="2023-08-12 12:42:17 +0800">2023</time> 周一飞. 中华人民共和国 广东省 深圳市 龙岗区 龙城大道2001号； 联系方式：+86 156 9183 1236；电子邮箱：fynnzhou@outlook.com
+        
+        <!-- <div>
+          这里还需要处理portfolio中看不到图片的问题
+          <table><tr>
+            <td><img src="assets\img\cuhksz.png" width="235px" height="50px" style="margin-left:150px;margin-right: 15px;" border=0 /></td>
+            <td>    </td>
+            <td><img src="assets\img/xjtublue.png" width="192px" height="44.8px" style="margin-left: 15px" border=0 /></td>
+            </tr></table> 
+        </div>
+       -->
+      </span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>周一飞</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/MySiteCN/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/MySiteCN/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/MySiteCN/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+        }
+    });
+  </script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/MySiteCN/">
+          <h2 class="nav-title">周一飞</h2>
+        </a>
+        <ul>
+          <li><a href="/MySiteCN/">About</a></li>
+          <li><a href="/MySiteCN/portfolio/">Portfolio</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <h2 class="post-title">基于遗传规划的选股因子挖掘</h2>
+  <div class="post-line"></div>
+
+  <h2 id="摘要">摘要</h2>
+
+<p>遗传规划(genetic programming)是演化算法(evolutionary algorithm)的分支，是一种启发式的公式演化技术。遗传规划从随机生成的公式群体开始，通过模拟自然界中遗传进化的过程，来逐渐生成契合特定目标的公式群体。作为一种监督学习方法，遗传规划可以根据特定目标，发现某些隐藏的、难以通过人脑构建出的数学公式。传统的监督学习算法主要运用于特征与标签之间关系的拟合，而遗传规划则更多运用于特征挖掘(特征工程)。
+在以往的因子研究中，常见的是“先有逻辑、后有公式”的方法（演绎法），如常见因子有估值、成长、波动率等。而遗传规划的方法可以在海量的数据中探索并进一步筛选有效的因子，在试图取解释因子的内涵，即“先有公式、后有逻辑”的方法（归纳法）。本篇报告将从第二个角度出发，利用启发式搜索试图挖掘出隐藏的有效因子。</p>
+
+<h2 id="关于遗传规划算法">关于遗传规划算法</h2>
+
+<h4 id="遗传规划的流程">遗传规划的流程</h4>
+
+<ul>
+  <li>随机生成一组未经选择和进化的原始公式会被随机生成(第一代公式)</li>
+  <li>通过某种规则计算每个公式的适应度，从中选出适合的个体作为下一代进化的父代。</li>
+  <li>将这些被选择出来的父代通过多种方法进化，形成不同的后代公式。</li>
+  <li>然后循环进行下一轮进化。随着迭代次数的增长，公式不断繁殖、变异、进化，从而不断逼近数据分布的真相。
+点击查看<a href="../assets/pdfs/genetic_programming_ppt.pdf"> $\color{SteelBlue}{完整报告(CN)}$</a></li>
+</ul>
+
+<h2 id="结论及展望">结论及展望</h2>
+
+<h4 id="项目学习总结">项目学习总结</h4>
+
+<ol>
+  <li>了解了遗传规划的基本原理及操作。</li>
+  <li>学习了Python中gplearn库中对遗传规划的使用，各种参数的定义。</li>
+  <li>实验：选取了沪深300成分股，在牛市和牛熊两市时间段下的数据，并依据3日，20日收益率作为标签进行因子挖掘。</li>
+  <li>单因子检验：回顾单因子分析流程，探索因子公式的表现。</li>
+</ol>
+
+<h4 id="困难与解决对策">困难与解决对策</h4>
+
+<ol>
+  <li>聚宽上无法使用gplearn —— 跨平台使用本地jupyter与聚宽平台</li>
+  <li>时间线太长，噪声太多 —— 取特定的牛熊时间段训练</li>
+  <li>函数太少缺少灵活性 —— 改写了部分函数使得参数可变</li>
+  <li>因子长度太长 ——  加惩罚因子参数，约束公式深度，防止过拟合</li>
+  <li>无法批量生成因子 —— 研究gplearn参数文档，找到对应方法</li>
+</ol>
+
+<h4 id="仍待提升的部分">仍待提升的部分</h4>
+
+<ol>
+  <li>因子预处理： 无法在本地用聚宽的中性化函数，因子在剔除行业、市值等方面影响后是否有稳定的RankIC仍待验证。</li>
+  <li>因子分析：较为依赖聚宽平台的因子分析模板，可将单因子测试的过程引入gplearn，对待挖掘因子进行传统风格因子中性化处理。</li>
+  <li>数据量及速度：当数据量变大时，可引入并行运算技术，加快因子矩阵的运算速度。</li>
+</ol>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/MySiteCN/2021-06-15/%E4%B8%AD%E5%9B%BD%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E5%A4%9A%E5%9B%A0%E5%AD%90%E7%AD%96%E7%95%A5" class="left next">Prev</a>
+  
+  
+    <a href="/MySiteCN/2020-04-30/%E5%9F%BA%E4%BA%8E%E9%A3%8E%E9%99%A9%E5%B9%B3%E4%BB%B7%E5%92%8C%E5%85%A8%E5%A4%A9%E5%80%99%E7%AD%96%E7%95%A5%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%8C%96%E5%AE%9E%E7%8E%B0" class="right next">Next</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+    </bv>
+      <span>
+        &copy; <time datetime="2023-08-12 12:42:17 +0800">2023</time> 周一飞. 中华人民共和国 广东省 深圳市 龙岗区 龙城大道2001号； 联系方式：+86 156 9183 1236；电子邮箱：fynnzhou@outlook.com
+        
+        <!-- <div>
+          这里还需要处理portfolio中看不到图片的问题
+          <table><tr>
+            <td><img src="assets\img\cuhksz.png" width="235px" height="50px" style="margin-left:150px;margin-right: 15px;" border=0 /></td>
+            <td>    </td>
+            <td><img src="assets\img/xjtublue.png" width="192px" height="44.8px" style="margin-left: 15px" border=0 /></td>
+            </tr></table> 
+        </div>
+       -->
+      </span>
+    </footer>
+  </body>
+</html>

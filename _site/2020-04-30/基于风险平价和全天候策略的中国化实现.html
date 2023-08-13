@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>周一飞</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/MySiteCN/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/MySiteCN/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/MySiteCN/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+        }
+    });
+  </script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/MySiteCN/">
+          <h2 class="nav-title">周一飞</h2>
+        </a>
+        <ul>
+          <li><a href="/MySiteCN/">About</a></li>
+          <li><a href="/MySiteCN/portfolio/">Portfolio</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <h2 class="post-title">基于风险平价和全天候策略的中国化实现</h2>
+  <div class="post-line"></div>
+
+  <h2 id="摘要">摘要</h2>
+
+<p>“风险平价”（Risk Parity） 这一词汇最早出现于 Qian（2005），策略采用的风险平价，理论采取 Qian 的定义。本质上，风险平价组合属于一种 beta 组合。 它放弃了对回报率的预测，重点放在对风险编制预算（Risk Budget）的环节。通过使每个风险因子对组合整体的风险贡献权重相等来达到真正意义上的分散风险。</p>
+
+<h2 id="策略采用的三种资产组合方法">策略采用的三种资产组合方法</h2>
+<p>点击查看<a href="../assets/pdfs/risk_parity.pdf">$\color{SteelBlue}{详细报告(CN)}$</a></p>
+<ul>
+  <li>全天候模型</li>
+  <li>风险平价(Risk Parity)</li>
+  <li>主成分分析风险平价模型</li>
+</ul>
+
+<h2 id="总结和展望">总结和展望</h2>
+
+<p>&amp;ensp在当前全球负利率、高波动和低收益的大时代背景下，资产配置的时代已悄然来临。 资产配置（Asset Allocation）以资产类别历史表现和投资者风险偏好为基础，决定不同类别资产在投资组合中的投资权重，以期消除投资者对收益所承担的不必要的额外风险。 传统单一市场下的投资，无法满足现阶段复杂的投资环境。投资者需要寻找更具收益风险比的资产组合，以获取预期的收益回报。</p>
+
+<p>&amp;ensp资产配置追求的是低风险的投资组合，更多地希望在低风险情境下获取稳定的财富增值，传统那些追求高风险高收益的投资组合模型并不适合大类资产配置的需求。策略基于风险角度构建资产配置模型， 并进行了三种风险平价模型的效果对比。策略从我国金融市场中选取了五类资产，分别是股票，商品，国债，企业债，黄金，并取每一类资产的 ETF 或 LOF 作为标的资产代表，具体为’159926.XSHE’, ‘160720.XSHE’,’510170.XSHG’, ‘510310.XSHG’, ‘518880.XSHG’。分别用三个模型进行回测分析，结果表明：在 2014 年 12 月 30 日至 2020 年 5 月 30 日的回测区间内，基于风险平价模型优化后的投资组合，要比进行单一资产种类投资获得更高的收益，更低的波动风险， 三种模型的平均年化收益率为 9%，平均年化波动率为 10%，平均最大回撤在 11.5%，收益表现明显优于单一资产，能够对抗大幅波动。其中，主成分风险平价模型的表现略好于其他两种模型。基于风险平价的思想，我们很好的管理了资产波动的风险，实现了较为稳定的收益。</p>
+
+<p>&amp;ensp当然，本报告还有许多可以改进的地方，譬如从模型算法角度，可以基于半衰期的思想计算资产收益率的协方差矩阵，或是改变求解优化组合的方法；从资产种类的角度，不同类别的资产可以增加至多个；从调仓周期的角度，可以将每月月末定期调仓改变成根据某种市场信号进行调仓；从杠杆的角度，还可以增加低风险资产的杠杆以求更好的模拟全天候模型等等。总之，革命尚未成功，同志仍需努力。</p>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/MySiteCN/2020-08-31/%E5%9F%BA%E4%BA%8E%E9%81%97%E4%BC%A0%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E7%9A%84%E9%80%89%E8%82%A1%E5%9B%A0%E5%AD%90%E6%8C%96%E6%8E%98" class="left next">Prev</a>
+  
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+    </bv>
+      <span>
+        &copy; <time datetime="2023-08-12 12:42:17 +0800">2023</time> 周一飞. 中华人民共和国 广东省 深圳市 龙岗区 龙城大道2001号； 联系方式：+86 156 9183 1236；电子邮箱：fynnzhou@outlook.com
+        
+        <!-- <div>
+          这里还需要处理portfolio中看不到图片的问题
+          <table><tr>
+            <td><img src="assets\img\cuhksz.png" width="235px" height="50px" style="margin-left:150px;margin-right: 15px;" border=0 /></td>
+            <td>    </td>
+            <td><img src="assets\img/xjtublue.png" width="192px" height="44.8px" style="margin-left: 15px" border=0 /></td>
+            </tr></table> 
+        </div>
+       -->
+      </span>
+    </footer>
+  </body>
+</html>
