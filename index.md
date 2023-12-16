@@ -29,7 +29,7 @@ layout: about
 * 复现Bridgewater的全天候以及风险平价权重动态调整算法,标的采用国内相应的ETF或LOF指数基金，构建大类宏观FOF策略，并使用主成分分析法对策略进行优化
 * 回测效果：2014-12至2020-05，主成分：年化收益10.1%，夏普比1.01；风险平价：年化收益9.17%，夏普比0.91
 
-## 多因子分析模型实现（指导教授：[元向辉](https://gr.xjtu.edu.cn/web/xhyuan)）
+## 多因子分析模型实现（指导教授：[元向辉](http://tv.cctv.com/2018/02/06/VIDE1AfjwlcuSiqJzErw4Fn4180206.shtml)）
 
 * 编程实现多因子分析方法，包括数据清洗、复现Barra USE3 Handbook多因子模型因子收益率计算方法，仿照原quantopian平台alphalens库实现分层回测模块，学习IC分析方法
 * 使用编写的因子分析模块对ROA因子进行分析，并与使用alphalens库的分析结果进行比较，完成实验报告
